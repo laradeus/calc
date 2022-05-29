@@ -1,0 +1,38 @@
+body {
+    font-family: Lato;
+    width: 800px;
+
+}
+
+h1 {
+    font-size:30px;
+}
+
+h2 {
+    font-size: 25px;
+
+}
+
+p {
+    color:grey;
+
+}
+
+.barra {
+  width: 700px;
+  height: 24px;
+  background: whitesmoke;
+  margin: 24px 0;
+  border-color: black;
+  border-style:dashed;
+  border-width: 1px;
+
+}
+
+
+.preenchimento {
+  width: 0%;
+  height: 100%;
+  background: orange;
+  transition: all 1s;
+}
