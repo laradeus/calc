@@ -1,11 +1,24 @@
 body {
     font-family: Lato;
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
+    display: flexbox;
+    justify-content: center;
+    align-items:center;
+    
+
+}
+
+.titulo {
+ display:flex;
+ align-items: flex;;
 
 }
 
 h1 {
     font-size:30px;
+    align-self: center;
+    display:flex;
 }
 
 h2 {
@@ -19,13 +32,15 @@ p {
 }
 
 .barra {
-  width: 700px;
+  width: 95%;
+  max-width: 700px;
   height: 24px;
   background: whitesmoke;
   margin: 24px 0;
   border-color: black;
   border-style:dashed;
   border-width: 1px;
+  margin-right: 10px;
 
 }
 
@@ -35,4 +50,11 @@ p {
   height: 100%;
   background: orange;
   transition: all 1s;
+}
+
+.resultado {
+  font-size: 20px;
+  display: flex;
+  box-align: center;
+
 }

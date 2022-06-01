@@ -1,5 +1,7 @@
 // Seleciona o elemento <input>
-let entrada = document.querySelector( 'input' )
+let entradaIda = document.querySelector( '.ida' )
+
+let entradaVolta = document.querySelector( '.volta' )
 
 // Seleciona o elemento <output>
 let saida = document.querySelector( 'output' )
@@ -10,22 +12,26 @@ let preenchimento = document.querySelector( '.preenchimento' )
 
 
 // Dispara a função calcular cada vez que o usuário digitar
-entrada.addEventListener( 'input', validar )
+entradaIda.addEventListener( 'input', validar )
+entradaVolta.addEventListener( 'input', validar )
+
 
 // Define função de validação
 function validar() {
 
     // Pega a string que foi digitada
-    let valor = entrada.value 
+    let ida = entradaIda.value 
+    let volta = entradaVolta.value 
+
     
     // Força a conversão para número inteiro
-    valor = parseInt( valor )
-
+    ida = parseInt( ida )
+    volta = parseInt( volta )
 
     // Se valor for maior que 0
-    if ( valor > 0 ) {
-        let semana = valor*(10)
-        mostrar( semana )
+    if ( ida >= 0 && volta >= 0 )  {
+        let semana = ( ida + volta ) * 5
+        mostrar( semana ) // tem como colocar "return" pra variável "sair" da função?
     }
     
     // Se não for um valor válido
@@ -41,6 +47,7 @@ function mostrar( semana ) {
     saida.textContent = "Você gasta "+semana+" minutos semanais" 
     porcentagem = (semana*100)/10080
     preenchimento.style.width = porcentagem + '%'
+    
     
 }
 
