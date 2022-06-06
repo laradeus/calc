@@ -1,10 +1,10 @@
 body {
-    font-family: Lato;
-    width: 100%;
-    max-width: 1200px;
-    display: block;
-    justify-content: center;
-    align-items:center;
+  font-family: Lato;
+  width: 100%;
+  max-width: 1200px;
+  display: block;
+  justify-content: center;
+  align-items:center;
 }
 
 .container {
@@ -17,33 +17,33 @@ body {
 }
 
 .titulo {
- display:block;
- align-items: flex;
- align-content: center;
+  display:block;
+  align-items: flex;
+  align-content: center;
 
 }
 
 h1 {
-    font-size:30px;
-    align-self: center;
-    display:flex;
-    color:orange;
-    text-shadow: 20px;
-    align-items: center;
-    text-align: center;
+  font-size:30px;
+  align-self: center;
+  display:flex;
+  color:orange;
+  text-shadow: 20px;
+  align-items: center;
+  text-align: center;
 }
 
 h2 {
-    font-size: 19px;
-    color:grey;
-    font-weight: 400;
-    text-align: center;
+  font-size: 19px;
+  color:grey;
+  font-weight: 400;
+  text-align: center;
 }
 
 p {
-    color:black;
-    text-align: center;
-    padding: 2px;
+  color:black;
+  text-align: center;
+  padding: 2px;
  
 }
 
