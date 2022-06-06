@@ -1,17 +1,25 @@
 body {
     font-family: Lato;
     width: 100%;
-    max-width: 800px;
-    display: flexbox;
+    max-width: 1200px;
+    display: block;
     justify-content: center;
     align-items:center;
-    
+}
+
+.container {
+  display:block;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20%;
+  padding-right: 20%;
 
 }
 
 .titulo {
- display:flex;
- align-items: flex;;
+ display:block;
+ align-items: flex;
+ align-content: center;
 
 }
 
@@ -19,16 +27,24 @@ h1 {
     font-size:30px;
     align-self: center;
     display:flex;
+    color:orange;
+    text-shadow: 20px;
+    align-items: center;
+    text-align: center;
 }
 
 h2 {
-    font-size: 25px;
-
+    font-size: 19px;
+    color:grey;
+    font-weight: 400;
+    text-align: center;
 }
 
 p {
-    color:grey;
-
+    color:black;
+    text-align: center;
+    padding: 2px;
+ 
 }
 
 .barra {
@@ -37,7 +53,7 @@ p {
   height: 24px;
   background: whitesmoke;
   margin: 24px 0;
-  border-color: black;
+  border-color: grey;
   border-style:dashed;
   border-width: 1px;
   margin-right: 10px;
@@ -56,5 +72,22 @@ p {
   font-size: 20px;
   display: flex;
   box-align: center;
+  margin: 10px;
+  padding:10%;
+  background-color: whitesmoke;
+  text-align: center;
+}
 
+.faixa1{
+  display: none;
+}
+.faixa2{
+  display: none;
+}
+.faixa3{
+  display: none;
+}
+
+.faixa4{
+  display: none;
 }
