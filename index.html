@@ -6,59 +6,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <title>Calculadora do trabalho presencial</title>
+    <title>Quanto custa o trabalho presencial</title>
     <link href="style.css" rel="stylesheet"></link>
 </head>
 <body>
-</head>
-<body>
-<div class="container">
-  <div class="titulo"><h1>Quanto tempo da sua vida você passa no transporte?</h1></div>
-
-  <p>
-    Você demora quantos <strong>minutos</strong> no transporte diário de ida ao trabalho?
-    <input class="ida" value="0">
+  <div class="container">
+    <div class="titulo"><h1>Quanto custa o trabalho presencial?</h1>
     <br>
-    <br>
-    E quantos <strong>minutos</strong> na volta?
-    <input class="volta" value="0">
-    <br>
-    <br>
-    <div class="resultado"> <output></output></div>
-  </p>
-
-  <div><h2>Esta é a parcela da sua semana que você gasta <strong>só com deslocamento</strong>:</h2></div>
-  <div class="barra">
-    <div class="preenchimento"></div>
-  </div>
-  <br>
-  <br> 
-  <div class="faixa1">
-    Com este tempo, em um mês, você poderia:
-    <br>
-    <div class="flourish-embed flourish-chart" data-src="visualisation/10243450"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-  </div>
-
-  <div class="faixa2">
-    Com este tempo, em um mês, você poderia:
-    <br>
-    <div class="flourish-embed flourish-chart" data-src="visualisation/10243841"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-  </div>
+    </div>
+    <p>Em 12 de março de 2020, o coronavírus fazia sua primeira vítima fatal no Brasil. No dia seguinte, uma sexta-feira, as empresas do País tiveram que decidir como organizariam suas operações no caso de um lockdown. Ao longo das semanas seguintes, muitos trabalhadores precisaram se adaptar às reuniões no Zoom e transformar cantos da sua casa em escritórios.</p>
+    <p>Apesar da sensação de isolamento generalizado, entre maio e novembro de 2020, <strong>apenas 11% dos trabalhadores do Brasil trabalharam no modelo remoto</strong>, e a distribuição entre os setores da economia foi discrepante.</p>
+    <div class="flourish-embed flourish-chart" data-src="visualisation/10721262"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+    
   
-  <div class="faixa3">
-    Com este tempo, em um mês, você poderia:
-    <br>
-    <div class="flourish-embed flourish-chart" data-src="visualisation/10243923"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-  </div>
+    <p>Depois de dois anos de pandemia, <strong>67% dos trabalhadores brasileiros não querem o modelo presencial</strong>. Segundo uma <a href="https://www.pwc.com.br/pt/sala-de-imprensa/release/No-retorno-ao-trabalho-presencial-maioria-dos-profissionais-prefere-ir-ao-escritorio-ate-duas-vezes-na-semana.html" target="_blank">pesquisa da PwC Brasil em parceria com o PageGroup</a>, a maioria prefere o regime integral de home office ou a ida ao escritório em, no máximo, dois dias na semana. E o motivo vai além do trabalho em si. A <a href="https://static.poder360.com.br/2022/06/An-lise-Mobilidade-Urbana.pdf" target="_blank">Pesquisa Nacional de Mobilidade Urbana 2022</a> descobriu que os brasileiros moradores de grandes centros urbanos passam, em média, <strong>120 minutos nos seus deslocamentos de rotina</strong>. Isso significa que essas pessoas passam 21 dias do seu ano apenas no transporte.</p>
+    <p>Você já pensou o que pode fazer com o tempo que passa no transporte ao trabalho?</p>
+    
+    <div id="tempo"><h2>O QUE FAZER COM O TEMPO?</h2>
+      <p>
+        Você demora quantos <strong>minutos</strong> no transporte diário de ida ao trabalho?
+        <input class="ida" value="0"  type="range" min="0" max="300" step="10" name="weight" id="range_weight" oninput="range_weight_disp.value = range_weight.value">
+        <output  id="range_weight_disp"></output>
+        <br>
+        <br>
+        E quantos <strong>minutos</strong> na volta?
+        <input class="volta" value="0"  type="range" min="0" max="300" step="10" name="weight" id="rangevolta_weight" oninput="rangevolta_weight_disp.value = rangevolta_weight.value">
+        <output  id="rangevolta_weight_disp"></output>
+          <br>
+          <br>
+        Quantos <strong>dias</strong> por semana você vai ao trabalho? <input class="dias" type="number" value="0" min="1" max="7">
+      </p>
+      
+      <div class="resultado"> <output class="saida"></output></div>
+      <div><p>Esta é a parcela da sua semana que você gasta <strong>só com deslocamento</strong>:</p></div>
+      <div class="barra">
+      <div class="preenchimento"></div>
+      </div>
+      
+      <div class="faixa1">
+        Com este tempo, em um mês, você poderia:
+        <ul>
+          <li>Dormir até 3 noites bem dormidas</li>
+          <li>Assistir aos filmes da saga Star Wars</li>
+          <li>Fazer um curso de Libras</li>
+          </ul>
+      </div>
+
+      <div class="faixa2">
+        Com este tempo, em um mês, você poderia:
+        <ul>
+          <li>Dormir 5 noites bem dormidas</li>
+          <li>Assistir às 5 temporadas de Breaking Bad</li>
+          <li>Fazer um curso de Lógica de Programação</li>
+          </ul>
+      </div>
+      
+      <div class="faixa3">
+        Com este tempo, em um mês, você poderia:
+        <ul>
+          <li>Dormir 7 noites bem dormidas</li>
+          <li>Fazer uma road trip para Lima, no Peru</li>
+          <li>Fazer um curso de Introdução à contabilidade</li>
+          </ul>
+      </div>
 
 
-  <div class="faixa4">
-    Com este tempo, em um mês, você poderia:
-    <br>
-    <div class="flourish-embed flourish-chart" data-src="visualisation/10243953"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+      <div class="faixa4">
+        Com este tempo, em um mês, você poderia:
+        <ul>
+        <li>Dormir 10 noites bem dormidas</li>
+        <li>Assistir às 9 temporadas de How I Met Your Mother</li>
+        <li>Fazer um curso completo de Pacote Office</li>
+        </ul>
+      </div>
+    </div>
+    <p>É nítido que o tempo de deslocamento ao trabalho pode ser melhor aproveitado de outras formas, caso o modelo remoto fosse adotado. Essa questão fica mais preocupante quando se constata que as pessoas mais pobres são as que passam mais tempo no transporte. Nas cidades, se cobra mais caro para morar próximo aos centros comerciais, o que obriga a classe trabalhadora a se concentrar nas periferias.</p>
+    <p> Mas não só por isso. Mesmo em 2020, quando ainda não existia vacina contra COVID-19 e as empresas tentavam preservar seus funcionários os colocando em regime remoto, a discrepância da adoção do modelo entre cores, escolaridades e regiões foi bem grande.</p>
+    <div class="flourish-embed flourish-chart" data-src="visualisation/10721359"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+    <p>Propondo uma reflexão descolada da realidade, é possível se ter ideia do valor que as horas que passamos no transporte representa. Se você <strong>já usou a primeira calculadora</strong>, veja abaixo o quanto receberia por este tempo de deslocamento.</p>
+    <div id="dinheiro"><h2>QUANTO VALE O TEMPO?</h2>
+      <p>
+      Quanto você ganha? <input class="salario"> 
+      <br>
+      Quantas horas trabalha semanalmente? <input class="horas">
+      <br>
+      <i>(Esses dados não serão guardados)</i>
+      </p>
+      <br>
+      <div class="resultado2"> <output class="saida2"></output></div>
+    </div>
+
+    <div class="botao"><button onClick="window.location.reload();">CALCULAR DE NOVO</button></div>
+    <div class="break">-------------------------------------</div>
+    <footer>Este trabalho foi feito por Lara Deus, sob orientação de Vinicius Sueiro, para a conclusão do Master em Jornalismo de Dados, Automação e Datastorytelling do Insper, em São Paulo. Caso queira entrar em contato, pode me chamar pelo <a href="https://www.linkedin.com/in/lara-deus/" target="_blank">LinkedIn</a> ou enviar um <a href="mailto:lara.lsfd@gmail.com">e-mail</a> :).</footer>
+
   </div>
-  
-    <script src="app.js"></script>
-</div>
+  <script src="app.js"></script>
 </body>
 </html>
