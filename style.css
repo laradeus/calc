@@ -12,9 +12,9 @@ body {
   display:block;
   justify-content: center;
   align-items: center;
-  padding-left: 15%;
+  padding-left: 10%;
   padding-right: 10%;
-  min-width: 400px;
+  margin: auto;
 }
 
 .titulo {
